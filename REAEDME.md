@@ -66,16 +66,47 @@ $ git add .
 $ git commit -m "확정(commit) 메시지 작성"
 ```
 
-## 되돌리기
+## 기록 된 히스토리
+
+버전 관리 중인 히스토리를 확인하려면 `log` 명령을 사용합니다.
+
+```sh
+$ git log
+```
+
+그래프 또는 한 줄로 히스토리를 표시하려면 `--graph`, `--oneline` 옵션 플래그를 추가합니다.
+
+```sh
+$ git log --graph --oneline
+```
+
+## 스테이징 취소
+
+인덱스에 추가 된 변경사항을 언 스테이지(Working Directory)로 되돌리려면 `reset` 명령을 사용합니다.
 
 ```sh
 $ git reset
 ```
 
+특정 파일만 스테이징 취소하려면 [[파일_이름]]을 명시적으로 작성합니다.
+
 ```sh
-$ git reset --soft 7cc40cf
+$ git reset <파일_이름>
 ```
+
+## 마지막 커밋 취소
+
+최종 커밋 된 내용을 취소하려면 `reset --soft HEAD^` 명령을 사용합니다.
+
+```sh
+$ git reset --soft HEAD^
+```
+
+## 특정 커밋 위치로 되돌리기
+
+기록 된 커밋의 특정 위치(커밋 해시) 값을 입력해 되돌릴 수 있습니다.
 
 ```sh
 $ git reset --hard 7cc40cf
 ```
+

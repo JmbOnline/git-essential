@@ -1,6 +1,8 @@
-# <img src="./assets/icon-git-1.png" alt style="width: 30px; vertical-align: -5px"> Git 버전 관리 에센셜 트레이닝
+# <img src="./assets/icon-git-1.png" alt style="width: 30px; vertical-align: -5px"> Git 버전 관리 에센셜
 
 Git을 사용해 프로젝트 버전 관리하는 방법을 살펴봅니다. [[CLI]] 또는 [[GUI]] 환경에서 Git을 사용하는 방법을 비교해봅니다.
+
+<a href="https://yamoo9.github.io/EUID" target="_blank"><img src="./assets/00-COVER.jpg" alt /></a>
 
 <br>
 
@@ -16,7 +18,7 @@ Git을 사용해 프로젝트 버전을 관리하는 흐름을 표현하면 다�
 +-------------------+---------------+-------------------------+-------------------+
 | Working directory | Index (Stage) | Local repository (HEAD) | Remote repository |
 +-------------------+---------------+-------------------------+-------------------+
-                                ← reset -                 ← fetch -
+               ← restore -      ← reset -                  ← fetch -
 ```
 
 
@@ -212,18 +214,20 @@ $ git log --graph --oneline
 
 ## <img src="./assets/icon-git-2.png" alt style="width: 20px; vertical-align: -1px"> 스테이징 취소
 
+인덱싱 되어 관리 중인 파일을 워킹 디렉토리로 되돌리는 방법을 학습합니다.
+
 #### CLI 명령어 환경 —
 
-인덱스에 추가 된 변경사항을 언 스테이지(Working Directory)로 되돌리려면 `reset` 명령을 사용합니다.
+인덱스에 추가 된 변경사항을 언 스테이지(Working Directory)로 되돌리려면 `restore` 명령을 사용합니다.
 
 ```sh
-$ git reset
+$ git restore
 ```
 
 특정 파일만 스테이징 취소하려면 [[파일_이름]]을 명시적으로 작성합니다.
 
 ```sh
-$ git reset <파일_이름>
+$ git restore <파일_이름>
 ```
 
 #### GUI 그래픽 환경 —
@@ -238,17 +242,31 @@ Visual Studio Code 소스 제어 화면에서 스테이징 된 변경 사항의 
 
 ## <img src="./assets/icon-git-2.png" alt style="width: 20px; vertical-align: -1px"> 마지막 커밋 취소
 
+마지막 커밋으로 되돌리는 방법을 살펴봅니다.
+
+#### CLI 명령어 환경 —
+
 최종 커밋 된 내용을 취소하려면 `reset --soft HEAD^` 명령을 사용합니다.
 
 ```sh
 $ git reset --soft HEAD^
 ```
 
+#### GUI 그래픽 환경 —
+
+Git History 화면에 출력 된 커밋 내용 중 되돌릴 커밋 이름 옆의 [[Soft]] 또는 [[Hard]] 버튼을 눌러 되돌릴 수 있습니다.
+
+<img src="./assets/07-git-reset-to-commit.jpg" alt />
+
 
 <!-- ----------------------------------------------------------------------- -->
 
 
 ## <img src="./assets/icon-git-2.png" alt style="width: 20px; vertical-align: -1px"> 특정 커밋 위치로 되돌리기
+
+특정 커밋으로 되돌리는 방법을 살펴봅니다.
+
+#### CLI 명령어 환경 —
 
 기록 된 커밋의 특정 위치(커밋 해시) 값을 입력해 되돌릴 수 있습니다.
 
@@ -260,3 +278,8 @@ $ git reset --soft 7cc40cf
 $ git reset --hard 7cc40cf
 ```
 
+#### GUI 그래픽 환경 —
+
+Git History 화면에 출력 된 커밋 내용 중 되돌릴 특정 커밋 이름 옆의 [[Soft]] 또는 [[Hard]] 버튼을 눌러 되돌릴 수 있습니다.
+
+<img src="./assets/08-git-reset-to-special-commit.jpg" alt />

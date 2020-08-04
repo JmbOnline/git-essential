@@ -2,7 +2,7 @@
 
 # <img src="./assets/icon-git-1.png" alt style="width: 30px; vertical-align: -5px"> Git 버전 관리 에센셜 PART 00
 
-Git을 사용해 프로젝트 버전 관리하는 방법을 살펴봅니다. [[CLI]]와 [[GUI]] 환경에서 Git을 사용하는 방법을 비교해봅니다.
+Git을 사용해 프로젝트 버전 관리하는 방법을 살펴보겠습니다. [[CLI]]와 [[GUI]] 환경에서 Git을 사용하는 방법을 비교해보겠습니다.
 
 <a href="https://yamoo9.github.io/EUID" target="_blank"><img src="./assets/00-COVER.jpg" alt /></a>
 
@@ -13,9 +13,7 @@ Git을 사용해 프로젝트 버전 관리하는 방법을 살펴봅니다. [[C
 
 ## <img src="./assets/icon-git-2.png" alt style="width: 20px; vertical-align: -1px"> Git 환경 설정하기
 
-Git을 사용하기 위해서는 로컬 컴퓨터에 사용자 정보를 등록해야 합니다.
-등록해야 하는 사용자 정보는 사용자 "ID"와 사용자의 "이메일 주소" 입니다.
-여기서는 Github 계정에 가입할 때 설정한 "ID"와 사용자의 "이메일 주소"를 CLI 명령어로 등록해 보도록 하겠습니다.
+Git을 사용하기 위해서는 로컬 컴퓨터에 사용자 정보를 등록해야 합니다. 등록해야 하는 사용자 정보는 사용자 "ID"와 사용자의 "이메일 주소" 입니다. 여기서는 Github 계정에 가입할 때 설정한 "ID"와 사용자의 "이메일 주소"를 CLI 명령어로 등록해 보도록 하겠습니다.
 
 
 #### CLI 명령어 환경 —
@@ -23,7 +21,7 @@ Git을 사용하기 위해서는 로컬 컴퓨터에 사용자 정보를 등록�
 `--config` 옵션 플래그를 사용하여 Git의 사용 환경을 적절하게 설정합니다.  
   
 Git 환경 설정은 사용자이름과 이메일 주소를 설정하는 것으로 Git은 커밋할 때마다 이 정보를 사용합니다. 
-한 번 커밋한 후에는 정보를 변경할 수 없으며 환경 설정은 언제든지 다시 수정할 수 있숩니다.
+한 번 커밋한 후에는 정보를 변경할 수 없으며 환경 설정은 언제든지 다시 수정할 수 있습니다.
 
 ```sh
 $ git config --global user.name <"사용자 ID">
@@ -46,7 +44,7 @@ VSCode에서는 설정할 수 없습니다.
 
 ## <img src="./assets/icon-git-2.png" alt style="width: 20px; vertical-align: -1px"> VS Code를 기본 에디터로 설정하기
 
-Git에서 사용하는 기본 에디터를 Visual Studio Code(VS Code)로 설정하는 방법을 살펴봅니다.
+Git에서 사용하는 기본 에디터를 Visual Studio Code(VS Code)로 설정하는 방법을 살펴보겠습니다.
 
 #### CLI 명령어 환경 —
 
@@ -67,7 +65,7 @@ VSCode에서는 설정할 수 없습니다.
 
 ## <img src="./assets/icon-git-2.png" alt style="width: 20px; vertical-align: -1px"> Git 환경 설정 값 확인하기
 
-사용자 "ID"와 사용자의 "이메일 주소" 그리고 기본 에디터 등 Git 환경 설정 값을 확인해 봅시다.
+사용자 "ID"와 사용자의 "이메일 주소" 그리고 기본 에디터 등 Git 환경 설정 값을 확인해보겠습니다.
 
 #### CLI 명령어 환경 —
 

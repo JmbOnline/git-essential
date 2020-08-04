@@ -98,7 +98,7 @@ $ git remote add origin <https://github.com/사용자ID/프로젝트_이름.git>
 `remote -v` 명령을 사용해 원격 저장소를 조회 할 수 있습니다.
 
 ```sh
-$ git remote add -v
+$ git remote -v
 ```
 
 #### GUI 그래픽 환경 —

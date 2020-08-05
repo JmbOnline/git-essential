@@ -4,7 +4,7 @@
 
 Git을 사용해 프로젝트 버전 관리하는 방법을 살펴보겠습니다. [[CLI]]와 [[GUI]] 환경에서 Git을 사용하는 방법을 비교해보겠습니다.
 
-<a href="https://yamoo9.github.io/EUID" target="_blank"><img src="./assets/00-COVER.jpg" alt /></a>
+<a href="https://bit.ly/GIT_ESSENTIAL" target="_blank"><img src="./assets/00-COVER.jpg" alt /></a>
 
 <br>
 
